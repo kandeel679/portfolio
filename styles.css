@@ -312,13 +312,13 @@ nav a:hover {
         width: 105%;
    }
 }
-@media only screen and (max-width: 389px) {
+@media only screen and (max-width: 414px) {
    .IMG-div{
     display: none;
    }
    .container{
     gap: 0;
-    padding: 20px;
+    padding: 15px;
     font-size: 0.6em;
    }
    nav{
