@@ -3,20 +3,27 @@ import { annotate ,annotationGroup} from 'https://unpkg.com/rough-notation?modul
 // import { annotate } from 'https://unpkg.com/rough-notation?module';
 
 const dev = document.getElementById('dev');
-const front_end = document.querySelector('#frontEnd')
-const back_end = document.querySelector("#backEnd")
-const userF = document.querySelector('#userF');
-const dev2 = document.querySelector('#dev2');
-const freelance = document.querySelector('#freelance');
+const cy = document.getElementById('cy');
 const cs = document.querySelector('#cs');
+const googlecert = document.getElementById('googlecert');
+const THMcert = document.getElementById('THMcert');;
+const ctf = document.getElementById('ctf');
+const internships = document.getElementById('internships');
+const jobs = document.getElementById('jobs');
 
-const a1 = annotate(dev, { type: 'box', color: '#7842f5' });
-const a7 = annotate(cs,{type:'highlight', color: '#9A73F3',multiline:false});
-const a2 = annotate(front_end, { type: 'highlight', color: '#8A52A1'});
-const a3 = annotate(back_end, { type: 'highlight', color: '#8A52A1'});
-const a4 = annotate(userF,{type:'highlight', color: '#8A52A1'});
-const a5 = annotate(dev2,{type:'box', color: '#7842f5',strokeWidth:2});
-const a6 = annotate(freelance,{type:'underline', color: '#7842f5',strokeWidth:2});
+const a1 = annotate(cy, { type: 'underline', color: '#7842f5' });
+const a2 = annotate(dev, { type: 'underline', color: '#7842f5' });
+// const a3 = annotate(cs,{type:'highlight', color: '#9A73F3'});
+const a3 = annotate(cs,{type:'highlight', color: '#9A73F3',multiline:false});
+const a4 = annotate(googlecert, { type: 'highlight', color: '#736586' });
+const a5 = annotate(THMcert, {type: 'highlight', color: '#736586'});
+const a6 = annotate(ctf, { type: 'underline', color: '#7842f5' });
 
-const ag = annotationGroup([a1,a7, a2,a3,a4,a5,a6]);
+const a7 = annotate(internships, { type: 'box', color: '#7842f5' });
+
+const a8 = annotate(jobs, { type: 'box', color: '#7842f5' });
+
+
+
+const ag = annotationGroup([a1,a2,a3,a4,a5,a6,a7,a8]);
 ag.show();
