@@ -1,6 +1,7 @@
 /* Width and color of the scrollbar track */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
+    height: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -224,89 +225,139 @@ nav a:hover {
   
 /* END About */
 /* Start Projects */
-/* .projects{
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-}
-.projects h1{
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: aliceblue;
-    font-size: 2.7em bold;
-    margin-bottom: 41px;
+/* Projects Section Styles */
+.projects {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
 
-.projects-container{
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(24rem,1fr));;
-    justify-items: center;
+.projects h1 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2.7em;
+  margin-bottom: 41px;
 }
-  .card {
-    width: 24rem;
-    height: 36rem;
-    border-radius: 10px ;
-    border: rebeccapurple;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    color: #f0f0f0;
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-  }
-  .card img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    transition: opacity 0.2s ease-out;
-  }
-  .card h2 {
-    position: absolute;
-    inset: auto auto 30px 30px;
-    margin: 0;
-    transition: inset 0.3s 0.3s ease-out;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-.card p, .card a {
-    font-size: .8em;
-    position: absolute;
-    opacity: 0;
-    max-width: 80%;
-    transition: opacity 0.3s ease-out;
-  }
-  .card p {
-    inset: auto auto 80px 30px;
-  }
-  .card a {
-    inset: auto auto 40px 30px;
-    color: inherit;
-    text-decoration: none;
-  }
-  .card:hover h2 {
-    inset: auto auto 200px 14px;
-    transition: inset 0.3s ease-out;
-  }
-  .card:hover p, .card:hover a {
-    opacity: 1;
-    transition: opacity 0.5s 0.1s ease-in;
-  }
-  .card:hover img {
-    transition: opacity 0.3s ease-in;
-    opacity: 1;
-  }
-  .material-symbols-outlined {
-    vertical-align: middle;
-  } */
 
+.projects-section {
+  margin-bottom: 50px;
+}
+
+.projects-section h2 {
+  color: #7842f5;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  justify-items: center;
+}
+
+.project-card {
+  width: 24rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #f0f0f0;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+
+.project-card .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .content {
+  transform: translateY(0);
+}
+
+.project-card h3 {
+  margin: 0 0 15px 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2em;
+  color: #7842f5;
+}
+
+.project-card p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.project-card .view-project {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #7842f5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .view-project:hover {
+  background-color: #6234c4;
+}
+
+.view-more-btn {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 2px solid #7842f5;
+  color: #7842f5;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+}
+
+.view-more-btn:hover {
+  background-color: #7842f5;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr;
+  }
   
+  .project-card {
+      width: 100%;
+      height: 30rem;
+  }
+}
 /* end Projects */
 /* Start contact*/
 .contact{
@@ -375,4 +426,3 @@ nav a:hover {
     }
     /* Styles for medium screens */
 }
-
