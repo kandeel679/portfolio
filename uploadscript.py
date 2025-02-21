@@ -233,6 +233,8 @@ def main():
             delete_project()
         elif choice == '5':
             push_all_git_commands()
+            print("Exiting...")
+            break
         elif choice == '6':
             print("Exiting...")
             break
