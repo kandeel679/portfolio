@@ -359,6 +359,99 @@ nav a:hover {
   }
 }
 /* end Projects */
+/* start blog */
+
+.blog-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-header {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-card {
+  background: rgba(120, 66, 245, 0.1);
+  border: 1px solid rgba(120, 66, 245, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(120, 66, 245, 0.2);
+}
+
+.blog-card h2 {
+  color: #7842f5;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.blog-card .date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card .description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.blog-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-card .tag {
+  background: rgba(120, 66, 245, 0.2);
+  color: #7842f5;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.blog-card .read-more {
+  display: inline-block;
+  background: #7842f5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.blog-card .read-more:hover {
+  background: #6234c4;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+      grid-template-columns: 1fr;
+  }
+}
+.blog-mini-container{
+  display: flex; 
+  flex-direction: column;
+}
+/* End blog */
 /* Start contact*/
 .contact{
     margin-top: 70px;
@@ -395,7 +488,7 @@ nav a:hover {
    .container{
     gap: 0;
     padding: 20px;
-    font-size: smaller;
+    /* font-size: smaller; */
    }
    nav{
         width: 105%;
@@ -408,11 +501,12 @@ nav a:hover {
    .container{
     gap: 0;
     padding: 15px;
-    font-size: 0.6em;
+    /* font-size: 0.6em; */
    }
    nav{
         width: 105%;
    }
+   
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {

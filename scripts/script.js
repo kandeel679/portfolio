@@ -27,3 +27,115 @@ const a8 = annotate(jobs, { type: 'box', color: '#7842f5' });
 
 const ag = annotationGroup([a1,a2,a3,a4,a5,a6,a7,a8]);
 ag.show();
+
+
+async function loadProjects() {
+    try {
+        const response = await fetch('./JSON/projects.json');
+        const data = await response.json();
+        
+        // Store all projects in localStorage for access on project details page
+        localStorage.setItem('allProjects', JSON.stringify({
+            featured: data.featured,
+            recent: data.recent
+        }));
+        
+        // Load featured projects (first two)
+        const featuredContainer = document.getElementById('featured-projects');
+        const featuredProjects = data.featured.slice(-2);
+        featuredProjects.forEach(project => {
+            featuredContainer.innerHTML += createProjectCard(project);
+        });
+        
+        // Load recent projects (first two)
+        const recentContainer = document.getElementById('recent-projects');
+        const recentProjects = data.recent.slice(-2);
+        recentProjects.forEach(project => {
+            recentContainer.innerHTML += createProjectCard(project);
+        });
+
+        // Update view more button to show all projects
+        const viewMoreBtn = document.querySelector('.view-more-btn');
+        viewMoreBtn.onclick = function() {
+            // Clear existing projects
+            featuredContainer.innerHTML = '';
+            recentContainer.innerHTML = '';
+            
+            // Show all featured projects
+            data.featured.forEach(project => {
+                featuredContainer.innerHTML += createProjectCard(project);
+            });
+            
+            // Show all recent projects
+            data.recent.forEach(project => {
+                recentContainer.innerHTML += createProjectCard(project);
+            });
+            
+            // Hide the view more button after showing all projects
+            viewMoreBtn.style.display = 'none';
+        };
+        
+    } catch (error) {
+        console.error('Error loading projects:', error);
+    }
+}
+
+function createProjectCard(project) {
+    return `
+        <div class="project-card">
+            <img src="${project.image}" alt="${project.title}">
+            <div class="content">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <a href="project-details.html?id=${project.id}" class="view-project">View Details</a>
+            </div>
+        </div>
+    `;
+}
+
+// Load projects when the page loads
+document.addEventListener('DOMContentLoaded', loadProjects);
+
+// Handle project details page
+if (window.location.pathname.includes('project-details.html')) {
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+        
+        if (projectId) {
+            const allProjects = JSON.parse(localStorage.getItem('allProjects'));
+            const project = [...allProjects.featured, ...allProjects.recent]
+                .find(p => p.id.toString() === projectId);
+            
+            if (project) {
+                document.getElementById('projectTitle').textContent = project.title;
+                document.getElementById('projectImage').src = project.image;
+                document.getElementById('projectOverview').textContent = project.description;
+                
+                if (project.features) {
+                    const featuresHtml = project.features.map(feature => 
+                        `<li>${feature}</li>`
+                    ).join('');
+                    document.getElementById('projectFeatures').innerHTML = featuresHtml;
+                }
+                
+                if (project.stack) {
+                    const stackHtml = project.stack.map(tech => 
+                        `<span class="tech-tag">${tech}</span>`
+                    ).join('');
+                    document.getElementById('projectStack').innerHTML = stackHtml;
+                }
+                
+                if (project.implementation) {
+                    document.getElementById('projectImplementation').textContent = 
+                        project.implementation;
+                }
+                
+                if (project.date) {
+                    document.getElementById('projectDate').textContent = 
+                        `Completed in ${project.date}`;
+                }
+            }
+        }
+    });
+}

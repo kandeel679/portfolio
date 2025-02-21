@@ -1,0 +1,77 @@
+{
+    "featured": [
+        {
+            "id": 1,
+            "title": "Full Stack Face Recognition App",
+            "description": "A full-stack React application featuring face recognition capabilities and a robust login system. The app integrates with a secure database and leverages the Clarifai API for advanced image processing and face detection.",
+            "image": "./images/facerecoScreenShot.png",
+            "github": "https://github.com/kandeel679/Face_recognition_frontEnd",
+            "isFeatured": true,
+            "features": [
+                "User authentication system with secure password hashing",
+                "Real-time face detection in uploaded images",
+                "PostgreSQL database integration for user data management",
+                "RESTful API endpoints for seamless frontend-backend communication",
+                "Responsive design for optimal viewing across devices"
+            ],
+            "stack": [
+                "React.js",
+                "Node.js",
+                "Express",
+                "PostgreSQL",
+                "Clarifai API",
+                "JWT",
+                "BCrypt"
+            ],
+            "implementation": "The application is built with a React frontend that communicates with a Node.js/Express backend. User data is stored securely in a PostgreSQL database with passwords hashed using BCrypt. The face recognition feature utilizes the Clarifai API's machine learning models for accurate detection. JWT tokens are implemented for secure user sessions.",
+            "date": "February 2024"
+        }
+    ],
+    "recent": [
+        {
+            "id": 2,
+            "title": "Rent Apartment Application",
+            "description": "This was by project for the OOP course that won the best project competition. Rent Apartment Application simplifies the process of finding and renting apartments for both tenants and landlords. The application provides an intuitive interface for tenants to search available apartments and for landlords to list their properties. Additionally, a machine learning model offers price recommendations for landlords based on various factors.",
+            "image": "./images/background.png",
+            "github": "https://github.com/kandeel679/Rent_management_system",
+            "features": [
+                "Search Apartments: Easily browse available apartments based on preferences such as location, size, and budget.",
+                "View Details: Access detailed information about each apartment, including images, amenities, and contact details.",
+                "Request Rental: Express interest in an apartment by submitting a rental request through the application.",
+                "List Apartments: Effortlessly list apartments by providing essential details such as location, size, amenities, and desired rent.",
+                "Receive Recommendations: Utilize a machine learning model to analyze market trends and receive optimal rental price suggestions.",
+                "Manage Rental Requests: View and manage rental requests from interested tenants."
+            ],
+            "stack": [
+                "Python",
+                "JavaFX",
+                "SQLite",
+                "Flask",
+                "scikit-learn",
+                "Java"
+            ],
+            "implementation": "Machine Learning Model: The application employs a trained machine learning model to assist landlords in determining competitive and fair rental prices for their apartments. The model considers factors like YearBuilt, size, FLoor to provide a simple recommendation.",
+            "date": "December 2023"
+        },
+        {
+            "id": 3,
+            "title": "Tic-Tac-Toe AI (Unbeatable with Minimax Algorithm)",
+            "description": "An advanced Tic-Tac-Toe game featuring an AI opponent that is unbeatable. The AI uses the Minimax algorithm to evaluate moves, ensuring it always plays optimally.",
+            "image": "./images/tictactoe.png",
+            "github": "https://github.com/yourusername/project3",
+            "features": [
+                " Unbeatable AI \u00e2\u20ac\u201c Uses the Minimax algorithm to make perfect moves",
+                "Interactive UI \u00e2\u20ac\u201c Built with HTML, CSS, and JavaScript",
+                "Instant Move Calculation \u00e2\u20ac\u201c The AI responds in real-time",
+                "Two Game Modes \u00e2\u20ac\u201c Play against AI or another player"
+            ],
+            "stack": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "implementation": "Frontend: Developed using HTML & CSS for layout and stylingGame Logic: Implemented in JavaScriptAI Algorithm: Uses Minimax with Alpha-Beta Pruning for optimal decision-making.User Interaction: Responsive UI for smooth gameplay",
+            "date": "May 2024"
+        }
+    ]
+}

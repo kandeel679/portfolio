@@ -5,7 +5,7 @@ async function loadProjectDetails() {
         const projectId = urlParams.get('id');
         
         // Fetch project data
-        const response = await fetch('projects.json');
+        const response = await fetch('../JSON/projects.json');
         const data = await response.json();
         
         // Find the project in either featured or recent arrays
