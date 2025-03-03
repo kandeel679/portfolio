@@ -1,15 +1,11 @@
 {
-    "posts": [
-        {
-            "title": "Pickle Rick \ufffd- THM Writeup",
-            "date": "2025-03-03",
-            "tags": [
-                "Directory Busting",
-                "command injection",
-                "Nmap scan"
-            ],
-            "description": "A Rick and Morty CTF. Help turn Rick back into a human!",
-            "link": "https://medium.com/@joexp251/pickle-rick-thm-writeup-75d46dd00df1"
-        }
-    ]
+  "posts": [
+    {
+      "title": "Pickle Rick - THM Writeup",
+      "date": "2025-03-03",
+      "tags": ["Directory Busting", "command injection", "Nmap scan"],
+      "description": "A Rick and Morty CTF. Help turn Rick back into a human!",
+      "link": "https://medium.com/@joexp251/pickle-rick-thm-writeup-75d46dd00df1"
+    }
+  ]
 }
