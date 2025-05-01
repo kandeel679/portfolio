@@ -1,137 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/jellyfish-samsung.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/jellyfish-samsung.png" type="image/png" />
     <title>Kandeel</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!--anmi css  -->
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Moirai+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Khand:wght@300;400;500;600;700&family=Lobster&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Honk&family=Moirai+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Khand:wght@300;400;500;600;700&family=Lobster&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/project-details.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/project-details.css" />
+  </head>
+  <body>
     <nav>
-        <h1 class="animate__bounce">YOUSSEF KANDEEL</h1>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <h1 class="animate__bounce">YOUSSEF KANDEEL</h1>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <div class="container ">
-        <div id="about" class="about-text ">
-            <!-- 👋 Hello! I’m Youssef Kandeel — a cybersecurity enthusiast and developer based in Egypt -->
-            <h2>👋 Hello! I’m Youssef Kandeel — a <span id="cy">Cybersecurity</span> and <span id="dev">Developer</span> based in Egypt </h2>
-            <br>
+    <div class="container">
+      <div id="about" class="about-text">
+        <!-- 👋 Hello! I'm Youssef Kandeel — a cybersecurity enthusiast and developer based in Egypt -->
+        <h2>
+          👋 Hello! I'm Youssef Kandeel — a
+          <span id="cy">Cybersecurity</span> and
+          <span id="dev">Developer</span> based in Egypt
+        </h2>
+        <br />
 
-            <p>As a <span id="cs">3rd-year Computer Science student at AASTMT</span>, I specialize in Cybersecurity, with hands-on experience in penetration testing, vulnerability exploitation, and defensive security. </p>
-            <p>I hold certifications like <span id="googlecert">Google Cybersecurity</span> and <span id="THMcert">Jr Penetration Tester</span> from THM, and I’ve successfully exploited SQLi, XSS, and CSRF vulnerabilities in real-world scenarios.</p>
-            <p>I’ve solved <span id="ctf"> 40+ CTF</span> challenges on TryHackMe, gaining expertise in Linux privilege escalation, network analysis, and exploit development. Experience with tools like Burp Suite, John the Ripper, and Postman, I’m passionate about identifying vulnerabilities and building secure systems.</p>
-            <p>🔍Looking For: <span id="internships">Internships</span> or <span id="jobs">entry-level roles</span> in cybersecurity, including penetration testing, red teaming, and security research. Let’s connect and build a safer digital world!</p>
-            <!-- <p>A <span id="cs">2nd-year Computer Science student at AASTMT</span> (Arab Academy for Science, Technology & Maritime Transport). Over the past 6 months, I've been submerging myself in the world of web development, delving into both the <span id="frontEnd">front-end</span> and <span id="backEnd">back-end</span> aspects.</p>
+        <p>
+          <span id="cs">3rd-year Computer Science student at AASTMT</span>,
+          specializing in Cybersecurity, with hands-on experience in penetration
+          testing, vulnerability exploitation, and defensive security.
+        </p>
+        <p>
+          I hold certifications like
+          <span id="googlecert">Google Cybersecurity</span> and
+          <span id="THMcert">Jr Penetration Tester</span> from THM, and I've
+          successfully exploited SQLi, XSS, and CSRF vulnerabilities in
+          real-world scenarios.
+        </p>
+        <p>
+          I've solved <span id="ctf"> 40+ CTF</span> challenges on TryHackMe,
+          gaining expertise in Linux privilege escalation, network analysis, and
+          exploit development. Experience with tools like Burp Suite, John the
+          Ripper, and Postman, I'm passionate about identifying vulnerabilities
+          and building secure systems.
+        </p>
+        <p>
+          🔍Looking For: <span id="internships">Internships</span> or
+          <span id="jobs">entry-level roles</span> in cybersecurity, including
+          penetration testing, red teaming, and security research. Let's connect
+          and build a safer digital world!
+        </p>
+        <!-- <p>A <span id="cs">2nd-year Computer Science student at AASTMT</span> (Arab Academy for Science, Technology & Maritime Transport). Over the past 6 months, I've been submerging myself in the world of web development, delving into both the <span id="frontEnd">front-end</span> and <span id="backEnd">back-end</span> aspects.</p>
             <p>I'm currently pursuing my Computer Science degree at AASTMT, where I'm gaining a strong foundation in the field and staying updated with the latest technologies.</p>
             <p>I thrive on creating impactful web applications that solve real problems, turning ideas into <span id="userF">user-friendly solutions.</span></p>
             <p>I'm currently looking for new opportunities as a developer, including both <span id="dev2">traditional </span> roles and <span id="freelance">freelance projects.</span></p> -->
 
         <div class="btn-container">
+          <button class="button1">
+            <a
+              href="https://github.com/kandeel679"
+              target="_blank"
+              style="text-decoration: none; color: rgb(0, 0, 0)"
+            >
+              <svg
+                fill="#ffffff"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                <g
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  id="SVGRepo_tracerCarrier"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>github</title>
+                  <rect fill="none" height="24" width="24"></rect>
+                  <path
+                    d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"
+                  ></path>
+                </g>
+              </svg>
+              View Github
+            </a>
+          </button>
 
-            <button class="button1" > 
-                <a href="https://github.com/kandeel679" target="_blank">
-                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <title>github</title> <rect fill="none" height="24" width="24"></rect> <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"></path> </g></svg>
-                   View Github 
-                </a> 
-            </button>
-            
-            <!-- From Uiverse.io by Yaya12085 --> 
-            <button class="button"> 
-                <a href="https://www.linkedin.com/in/youssef-kandeel/" target="_blank">
-                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g></svg>
-                    View LinkedIn 
-                </a>
-            </button>
-            <button class="button" id="down" target="_blank"> 
-                <a  href="Youssef_Kandeel_Resume_CY.pdf" download="Youssef_Kandeel_Resume_CY.pdf">
-                    Download Resume
-                </a>
-            </button>
+          <!-- From Uiverse.io by Yaya12085 -->
+          <button class="button">
+            <a
+              href="https://www.linkedin.com/in/youssef-kandeel/"
+              target="_blank"
+              style="text-decoration: none; color: rgb(255, 255, 255)"
+            >
+              <svg
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill="#ffffff"
+                    d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"
+                  ></path>
+                </g>
+              </svg>
+              View LinkedIn
+            </a>
+          </button>
+          <button class="button" id="down" target="_blank">
+            <a
+              href="Youssef_Kandeel_Resume_CY.pdf"
+              download="Youssef_Kandeel_Resume_CY.pdf"
+              style="text-decoration: none; color: rgb(255, 255, 255)"
+            >
+              Download Resume
+            </a>
+          </button>
+        </div>
+      </div>
 
-        </div>
-
-        </div>
-        
-        <div class="IMG-div animate__animated animate__tada  ">
-            <img src="./images/sss.jpg" alt="">
-        </div>
+      <div class="IMG-div animate__animated animate__tada">
+        <img src="./images/sss.jpg" alt="" />
+      </div>
     </div>
     <!-- projects seciton  -->
     <div class="projects container" id="projects">
-        <hr>
-        <h1>Projects</h1>
-        
-        <!-- Featured Projects -->
-        <div class="projects-section">
-            <h2>Featured Project</h2>
-            <div class="projects-grid" id="featured-projects">
-                <!-- Featured projects will be loaded here -->
-            </div>
+      <hr />
+      <h1>Projects</h1>
+
+      <!-- Featured Projects -->
+      <div class="projects-section">
+        <h2>Featured Project</h2>
+        <div class="projects-grid" id="featured-projects">
+          <!-- Featured projects will be loaded here -->
         </div>
-        
-        <!-- Recent Projects -->
-        <div class="projects-section">
-            <h2>Recent Projects</h2>
-            <div class="projects-grid" id="recent-projects">
-                <!-- Recent projects will be loaded here -->
-            </div>
+      </div>
+
+      <!-- Recent Projects -->
+      <div class="projects-section">
+        <h2>Recent Projects</h2>
+        <div class="projects-grid" id="recent-projects">
+          <!-- Recent projects will be loaded here -->
         </div>
-        
-        <a href="all-projects.html" class="view-more-btn" >
-            View More Projects
-        </a>
+      </div>
+
+      <a href="all-projects.html" class="view-more-btn"> View More Projects </a>
     </div>
     <div id="blog" class="blog-container">
-        <hr>
-        <div  class="blog-header">
-            <h1>CTF Writeups & Security Research</h1>
+      <hr />
+      <div class="blog-header">
+        <h1>CTF Writeups & Security Research</h1>
+      </div>
+      <div class="blog-mini-container">
+        <div class="blog-grid" id="blog-grid">
+          <!-- Blog posts will be loaded here -->
         </div>
-        <div class="blog-mini-container">
-            <div class="blog-grid" id="blog-grid">
-                <!-- Blog posts will be loaded here -->
-              
-            </div>
-            <a href="all-blogs.html" class="view-more-btn" >
-                View More Projects
-            </a>
-        </div>
+        <a href="all-blogs.html" class="view-more-btn"> View More Projects </a>
+      </div>
     </div>
     <div id="contact" class="contact container">
-        <hr>
-        <h1>Contact</h1>
-        <p>Feel free to reach me at <a href="mailto:youssefkandeel16@gmail.com">youssefkandeel16@gmail.com</a>.
+      <hr />
+      <h1>Contact</h1>
+      <p>
+        Feel free to reach me at
+        <a href="mailto:youssefkandeel16@gmail.com"
+          >youssefkandeel16@gmail.com</a
+        >.
+      </p>
     </div>
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script type="module" src="./scripts/script.js"></script>
-<script type="module" src="./scripts/blog.js"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="./scripts/script.js"></script>
+  <script type="module" src="./scripts/blog.js"></script>
 </html>
