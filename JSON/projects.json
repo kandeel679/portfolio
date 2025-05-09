@@ -29,6 +29,25 @@
     ],
     "recent": [
         {
+            "id": 4,
+            "title": "JellyScan",
+            "description": "JellyScan is a comprehensive CTF reconnaissance tool designed to automate the enumeration process for security enthusiasts, penetration testers, and CTF participants. It performs systematic scanning of target systems across various security levels, collecting valuable information about open ports, services, vulnerabilities, and potential attack vectors.",
+            "image": "./images/jellyscanProject.png",
+            "github": "https://github.com/kandeel679/jellyScan/tree/main",
+            "isFeatured": false,
+            "features": [
+                "Bash",
+                "nmap",
+                "gobuster",
+                "enum4linux"
+            ],
+            "stack": [
+                ""
+            ],
+            "implementation": "Features",
+            "date": "Multi-level Scanning: Choose from 4 different scanning levels with increasing depth and thoroughness"
+        },
+        {
             "id": 2,
             "title": "Rent Apartment Application",
             "description": "This was by project for the OOP course that won the best project competition. Rent Apartment Application simplifies the process of finding and renting apartments for both tenants and landlords. The application provides an intuitive interface for tenants to search available apartments and for landlords to list their properties. Additionally, a machine learning model offers price recommendations for landlords based on various factors.",
